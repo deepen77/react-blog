@@ -18,8 +18,8 @@ export default function Topbar() {
               HOME
             </Link>
           </li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
+          <li className="topListItem"><Link className="link" to="/">ABOUT</Link></li>
+          <li className="topListItem"><Link className="link" to="/">CONTACT</Link></li>
           <li className="topListItem">
             <Link className="link" to="/write">
               WRITE
@@ -31,11 +31,7 @@ export default function Topbar() {
       <div className="topRight">
         {user ? (
           <Link className="link" to="/settings">
-            <img
-              className="topImg"
-              src="/images/przemek-headshot.jpg"
-              alt=""
-            />
+            <img className="topImg" src="/images/przemek-headshot.jpg" alt="" />
           </Link>
         ) : (
           <ul className="topList">
